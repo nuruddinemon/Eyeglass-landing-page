@@ -1,7 +1,19 @@
+import Banner from "./components/Banner";
+import BuyEasyStep from "./components/BuyEasyStep";
+import DiscountProducts from "./components/DiscountProducts";
+import Header from "./components/Header";
+
 function App() {
   return (
     <>
-      <h1 className="text-5xl text-center bg-slate-300">Hello World</h1>
+      {/* Header Area */}
+      <Header/>
+      {/* Banner Area */}
+      <Banner/>
+      {/* Buy Easy Step Area */}
+      <BuyEasyStep/>
+      {/* Dicount Products Area */}
+      <DiscountProducts/>
     </>
   );
 }
