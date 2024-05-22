@@ -6,7 +6,7 @@ import twitter from "../assets/images/twitter icon.png";
 export default function Footer() {
   return (
     <div>
-      <div className="flex justify-between w-[1321px] mx-auto">
+      <div className="flex justify-between 2xl:w-[1321px] mx-auto xl:w-[90%]">
         <div className="w-[350px]">
           <a href="#">
             <img src={footerLogo} alt="footer logo" />
@@ -131,7 +131,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t-[1px] border-[#FED29C] mt-6">
-        <div className="flex justify-between w-[1321px] mx-auto my-6">
+        <div className="flex justify-between 2xl:w-[1321px] mx-auto my-6 xl:w-[90%]">
           <p className="font-jost text-[#535353] text-base">
             Copyright © 2023 All rights reserved by Eyeglass
           </p>

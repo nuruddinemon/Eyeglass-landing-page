@@ -4,7 +4,7 @@ export default function AboutUs() {
   return (
     <div id="about_us" className="pt-12">
       <div className="flex justify-center">
-        <div className="bg-[#FED29C] w-7/12 flex flex-col justify-center ps-36 pr-28">
+        <div className="bg-[#FED29C] w-7/12 flex flex-col justify-center 2xl:ps-36 2xl:pr-28 xl:ps-16">
           <h2 className="text-[#383838] text-4xl font-bold font-jost leading-[48px]">
             Experience clear vision with OptiChroma Vision Frames
           </h2>
@@ -24,8 +24,8 @@ export default function AboutUs() {
             About Us
           </a>
         </div>
-        <div className='w-5/12'>
-          <img src={aboutImg} alt="aboutImg" />
+        <div className="w-5/12">
+          <img src={aboutImg} alt="aboutImg" className="2xl:w-full" />
         </div>
       </div>
     </div>

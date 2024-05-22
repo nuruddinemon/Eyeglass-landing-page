@@ -8,7 +8,7 @@ import heartIcon from "../assets/images/heart_icon.png";
 
 export default function OurProducts() {
   return (
-    <div id="our_products" className="w-[1321px] mx-auto my-28">
+    <div id="our_products" className="2xl:w-[1321px] xl:w-[90%] mx-auto my-28">
       <div className="flex justify-between items-center">
         <div>
           <h2 className="text-[#383838] text-4xl font-bold font-jost leading-[48px]">
