@@ -8,19 +8,19 @@ import heartIcon from "../assets/images/heart_icon.png";
 
 export default function OurProducts() {
   return (
-    <div id="our_products" className="2xl:w-[1321px] xl:w-[90%] mx-auto my-28">
-      <div className="flex justify-between items-center">
+    <div id="our_products" className="2xl:w-[1321px] w-[90%] mx-auto my-28">
+      <div className="flex flex-col items-center gap-8 lg:justify-between lg:flex-row lg:items-stretch lg:gap-0">
         <div>
-          <h2 className="text-[#383838] text-4xl font-bold font-jost leading-[48px]">
+          <h2 className="text-[#383838] text-4xl font-bold font-jost leading-[48px] lg:text-start text-center">
             Our Products
           </h2>
-          <p className="text-[#535353] text-base font-jost mt-3">
+          <p className="text-[#535353] text-base font-jost mt-3 lg:text-start text-center">
             Experience crystal clear vision and elevated style with our <br />{" "}
             premium collection of eyeglasses.
           </p>
         </div>
         <div>
-          <ul className="flex justify-center gap-8  items-center">
+          <ul className="flex items-center justify-center gap-8">
             <li>
               <button className="text-[#383838] text-base font-jost ">
                 Latest
@@ -39,10 +39,10 @@ export default function OurProducts() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-between gap-4 mt-16">
-        <div className="w-[417px]">
+      <div className="flex flex-col items-center gap-12 mt-16 lg:gap-4 lg:justify-between lg:flex-row lg:items-stretch">
+        <div className="sm:w-[417px]">
           <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between">
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center">
                 <p className="text-[#5a5a5a] text-base font-jost font-bold ">
                   10%
@@ -68,7 +68,7 @@ export default function OurProducts() {
           <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
             Bravo Sunglasses
           </h2>
-          <p className="text-xl font-jost my-2 flex gap-2">
+          <p className="flex gap-2 my-2 text-xl font-jost">
             <span className="font-bold text-[#535353]">$100</span>
             <span className="text-[#545454] line-through">$150</span>
           </p>
@@ -76,9 +76,9 @@ export default function OurProducts() {
             Add To Cart
           </button>
         </div>
-        <div className="w-[417px]">
+        <div className="sm:w-[417px]">
           <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between ">
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center">
                 <p className="text-[#5a5a5a] text-base font-jost font-bold ">
                   10%
@@ -104,7 +104,7 @@ export default function OurProducts() {
           <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
             Vincent Chase
           </h2>
-          <p className="text-xl font-jost my-2 flex gap-2">
+          <p className="flex gap-2 my-2 text-xl font-jost">
             <span className="font-bold text-[#535353]">$120</span>
             <span className="text-[#545454] line-through">$150</span>
           </p>
@@ -112,9 +112,9 @@ export default function OurProducts() {
             Add To Cart
           </button>
         </div>
-        <div className="w-[417px]">
+        <div className="sm:w-[417px]">
           <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between">
-            <div className="flex justify-end items-center">
+            <div className="flex items-center justify-end">
               <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center hidden">
                 <p className="text-[#5a5a5a] text-base font-jost font-bold ">
                   10%
@@ -140,7 +140,7 @@ export default function OurProducts() {
           <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
             John Jacobs
           </h2>
-          <p className="text-xl font-jost my-2 flex gap-2">
+          <p className="flex gap-2 my-2 text-xl font-jost">
             <span className="font-bold text-[#535353]">$100</span>
             <span className="text-[#545454] hidden">$150</span>
           </p>
@@ -149,10 +149,10 @@ export default function OurProducts() {
           </button>
         </div>
       </div>
-      <div className="flex justify-between gap-4 mt-24">
-        <div className="w-[417px]">
+      <div className="flex flex-col items-center gap-12 mt-24 lg:gap-4 lg:justify-between lg:flex-row lg:items-stretch">
+        <div className="sm:w-[417px]">
           <div className="bg-[#F7F7F7] rounded-md p-8 h-[474px] flex flex-col justify-between">
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center">
                 <p className="text-[#5a5a5a] text-base font-jost font-bold ">
                   10%
@@ -178,7 +178,7 @@ export default function OurProducts() {
           <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
             Tommy Hilfiger
           </h2>
-          <p className="text-xl font-jost my-2 flex gap-2">
+          <p className="flex gap-2 my-2 text-xl font-jost">
             <span className="font-bold text-[#535353]">$130</span>
             <span className="text-[#545454] line-through">$150</span>
           </p>
@@ -186,9 +186,9 @@ export default function OurProducts() {
             Add To Cart
           </button>
         </div>
-        <div className="w-[417px]">
+        <div className="sm:w-[417px]">
           <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between">
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center hidden">
                 <p className="text-[#5a5a5a] text-base font-jost font-bold ">
                   10%
@@ -214,7 +214,7 @@ export default function OurProducts() {
           <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
             Ray Ban
           </h2>
-          <p className="text-xl font-jost my-2 flex gap-2">
+          <p className="flex gap-2 my-2 text-xl font-jost">
             <span className="font-bold text-[#535353]">$120</span>
             <span className="text-[#545454] line-through hidden">$150</span>
           </p>
@@ -222,9 +222,9 @@ export default function OurProducts() {
             Add To Cart
           </button>
         </div>
-        <div className="w-[417px]">
+        <div className="sm:w-[417px]">
           <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between">
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center">
                 <p className="text-[#5a5a5a] text-base font-jost font-bold ">
                   10%
@@ -250,7 +250,7 @@ export default function OurProducts() {
           <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
             Occhiali
           </h2>
-          <p className="text-xl font-jost my-2 flex gap-2">
+          <p className="flex gap-2 my-2 text-xl font-jost">
             <span className="font-bold text-[#535353]">$110</span>
             <span className="text-[#545454] line-through">$150</span>
           </p>

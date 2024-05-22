@@ -2,14 +2,11 @@ import React from "react";
 
 export default function DiscountProducts() {
   return (
-    <div
-      id="discount_products"
-      className="my-16 2xl:w-[1321px] 2xl:mx-auto"
-    >
-      <div className="flex gap-6 xl:w-[90%] mx-auto">
-        <div className="flex flex-col justify-center gap-6">
-          <div className='bg-[url("../src/assets/images/discount_Image_1.png")] xl:w-[550px] h-[643px] 2xl:w-[633px] bg-cover bg-center flex items-end pb-8 rounded-sm'>
-            <div className="bg-white w-[483px] h-[225px] flex flex-col justify-center items-center mx-auto rounded-md">
+    <div id="discount_products" className="my-16 2xl:w-[1321px] 2xl:mx-auto">
+      <div className="flex gap-6 w-[90%] mx-auto justify-center lg:flex-row flex-col ">
+        <div className="flex flex-col gap-6">
+          <div className='bg-[url("../src/assets/images/discount_Image_1.png")] xl:w-[550px] lg:w-[480px] lg:h-[643px] h-[500px] 2xl:w-[633px] bg-cover bg-center flex items-end pb-8 rounded-sm'>
+            <div className="bg-white xl:w-[483px] lg:w-[420px] h-[225px] flex flex-col justify-center items-center mx-auto rounded-md w-11/12">
               <h2 className="text-[#383838] text-2xl font-bold font-jost">
                 Bravo Sunglasses
               </h2>
@@ -24,8 +21,8 @@ export default function DiscountProducts() {
               </a>
             </div>
           </div>
-          <div className='bg-[url("../src/assets/images/discount_Image_3.png")] xl:w-[550px] h-[509px] 2xl:w-[633px] bg-cover bg-center flex items-end pb-8 rounded-sm'>
-            <div className="bg-white w-[483px] h-[225px] flex flex-col justify-center items-center mx-auto rounded-md">
+          <div className='bg-[url("../src/assets/images/discount_Image_3.png")] xl:w-[550px] lg:w-[480px] h-[509px] 2xl:w-[633px] bg-cover bg-center flex items-end pb-8 rounded-sm'>
+            <div className="bg-white xl:w-[483px] lg:w-[420px] h-[225px] flex flex-col justify-center items-center mx-auto rounded-md w-11/12">
               <h2 className="text-[#383838] text-2xl font-bold font-jost">
                 John Jacobs
               </h2>
@@ -42,8 +39,8 @@ export default function DiscountProducts() {
           </div>
         </div>
         <div className="flex flex-col gap-6">
-          <div className='bg-[url("../src/assets/images/discount_Image_2.png")] xl:w-[550px] h-[509px] 2xl:w-[633px] bg-cover bg-center flex items-end pb-8 rounded-sm'>
-            <div className="bg-white w-[483px] h-[225px] flex flex-col justify-center items-center mx-auto rounded-md">
+          <div className='bg-[url("../src/assets/images/discount_Image_2.png")] xl:w-[550px] lg:w-[480px] h-[509px] 2xl:w-[633px] bg-cover bg-center flex items-end pb-8 rounded-sm'>
+            <div className="bg-white xl:w-[483px] lg:w-[420px]  h-[225px] flex flex-col justify-center items-center mx-auto rounded-md w-11/12">
               <h2 className="text-[#383838] text-2xl font-bold font-jost">
                 Tommy Hilfiger
               </h2>
@@ -58,8 +55,8 @@ export default function DiscountProducts() {
               </a>
             </div>
           </div>
-          <div className='bg-[url("../src/assets/images/discount_Image_4.png")] xl:w-[550px] h-[643px] 2xl:w-[633px]  bg-cover bg-center flex items-end pb-8 rounded-sm'>
-            <div className="bg-white w-[483px] h-[225px] flex flex-col justify-center items-center mx-auto rounded-md">
+          <div className='bg-[url("../src/assets/images/discount_Image_4.png")] xl:w-[550px] lg:w-[480px] lg:h-[643px] h-[500px] 2xl:w-[633px]  bg-cover bg-center flex items-end pb-8 rounded-sm'>
+            <div className="bg-white xl:w-[483px] lg:w-[420px]  h-[225px] flex flex-col justify-center items-center mx-auto rounded-md w-11/12">
               <h2 className="text-[#383838] text-2xl font-bold font-jost">
                 Vincent Chase
               </h2>

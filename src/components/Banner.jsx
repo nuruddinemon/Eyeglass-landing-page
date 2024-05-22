@@ -5,11 +5,11 @@ export default function Banner() {
   return (
     <div
       id="banner"
-      className="bg-[#EAEAEA] h-[918px] flex justify-between items-center"
+      className="bg-[#EAEAEA] xl:h-[918px] flex justify-between items-center lg:h-[520px]"
     >
-      <div className="relative w-[96%]">
-        <div className="flex flex-col gap-4 justify-center 2xl:ml-[7.8rem] z-10 h-[918px] relative w-1/2 ml-16 ">
-          <h1 className="text-[#383838] text-[54px] leading-[66px] font-bold font-jost mb-8">
+      <div className="relative xl:w-[96%] flex xl:justify-center items-end lg:w-[85%] mx-auto xl:block lg:flex-row flex-col gap-12 lg:gap-0 w-4/5">
+        <div className="flex flex-col lg:gap-4 justify-center 2xl:ml-[7.8rem] z-10 xl:h-[918px] relative xl:w-1/2  w-full xl:ml-16 mt-10 lg:h-[476px] lg:items-baseline items-center">
+          <h1 className="text-[#383838] text-[54px] leading-[66px] font-bold font-jost mb-8 lg:text-start text-center">
             Personalized Eyeglass Shopping
           </h1>
           <a
@@ -20,7 +20,7 @@ export default function Banner() {
             <span>Buy Now</span>
           </a>
         </div>
-        <div className="absolute top-14 2xl:translate-x-1/2 z-0 2xl:w-[60%] xl:translate-x-[40%]">
+        <div className="xl:absolute top-[4.9rem] 2xl:translate-x-1/2 z-0 2xl:w-[60%] xl:translate-x-[40%]">
           <img src={banner} alt="" />
         </div>
       </div>

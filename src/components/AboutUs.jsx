@@ -2,13 +2,13 @@ import aboutImg from '../assets/images/about Image.png'
 
 export default function AboutUs() {
   return (
-    <div id="about_us" className="pt-12">
-      <div className="flex justify-center">
-        <div className="bg-[#FED29C] w-7/12 flex flex-col justify-center 2xl:ps-36 2xl:pr-28 xl:ps-16">
-          <h2 className="text-[#383838] text-4xl font-bold font-jost leading-[48px]">
+    <div id="about_us" className="pt-12 xl:w-auto lg:w-[90%] mx-auto">
+      <div className="flex flex-col justify-center lg:flex-row ">
+        <div className="bg-[#FED29C] xl:w-7/12 lg:w-3/5 flex flex-col justify-center 2xl:ps-36 2xl:pr-28 xl:ps-16 lg:p-8 items-center lg:items-stretch px-14 py-12">
+          <h2 className="text-[#383838] text-4xl font-bold font-jost leading-[48px] lg:text-start text-center">
             Experience clear vision with OptiChroma Vision Frames
           </h2>
-          <p className="text-[#535353] text-xl font-jost mt-6">
+          <p className="text-[#535353] text-xl font-jost mt-4">
             At OptiChroma, we believe that everyone deserves clear vision and
             stylish eyewear. That's why we've designed a collection of frames
             that prioritize both form and function.
@@ -24,8 +24,12 @@ export default function AboutUs() {
             About Us
           </a>
         </div>
-        <div className="w-5/12">
-          <img src={aboutImg} alt="aboutImg" className="2xl:w-full" />
+        <div className="xl:w-5/12 lg:w-2/5 xl:h-auto lg:h-[430px]">
+          <img
+            src={aboutImg}
+            alt="aboutImg"
+            className="w-full xl:h-auto lg:h-[430px] "
+          />
         </div>
       </div>
     </div>
