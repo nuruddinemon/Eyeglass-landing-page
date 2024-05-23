@@ -49,7 +49,9 @@ export default function OurProducts() {
                 </p>
               </div>
               <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <img src={heartIcon} alt="heart icon" />
+                <button>
+                  <img src={heartIcon} alt="heart icon" />
+                </button>
               </div>
             </div>
             <img src={product1} alt="product thumbnail" />
@@ -85,7 +87,9 @@ export default function OurProducts() {
                 </p>
               </div>
               <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <img src={heartIcon} alt="heart icon" />
+                <button>
+                  <img src={heartIcon} alt="heart icon" />
+                </button>
               </div>
             </div>
             <img src={product2} alt="product thumbnail" />
@@ -115,13 +119,15 @@ export default function OurProducts() {
         <div className="sm:w-[417px]">
           <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between">
             <div className="flex items-center justify-end">
-              <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center hidden">
+              <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full  justify-center items-center hidden">
                 <p className="text-[#5a5a5a] text-base font-jost font-bold ">
                   10%
                 </p>
               </div>
               <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <img src={heartIcon} alt="heart icon" />
+                <button>
+                  <img src={heartIcon} alt="heart icon" />
+                </button>
               </div>
             </div>
             <img src={product3} alt="product thumbnail" />
@@ -159,7 +165,9 @@ export default function OurProducts() {
                 </p>
               </div>
               <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <img src={heartIcon} alt="heart icon" />
+                <button>
+                  <img src={heartIcon} alt="heart icon" />
+                </button>
               </div>
             </div>
             <img src={product4} alt="product thumbnail" />
@@ -189,13 +197,15 @@ export default function OurProducts() {
         <div className="sm:w-[417px]">
           <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between">
             <div className="flex items-center justify-between">
-              <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center hidden">
+              <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full  justify-center items-center hidden">
                 <p className="text-[#5a5a5a] text-base font-jost font-bold ">
                   10%
                 </p>
               </div>
               <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <img src={heartIcon} alt="heart icon" />
+                <button>
+                  <img src={heartIcon} alt="heart icon" />
+                </button>
               </div>
             </div>
             <img src={product5} alt="product thumbnail" />
@@ -231,7 +241,9 @@ export default function OurProducts() {
                 </p>
               </div>
               <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <img src={heartIcon} alt="heart icon" />
+                <button>
+                  <img src={heartIcon} alt="heart icon" />
+                </button>
               </div>
             </div>
             <img src={product6} alt="product thumbnail" />

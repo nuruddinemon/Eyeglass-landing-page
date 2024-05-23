@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function DiscountProducts() {
   return (
     <div id="discount_products" className="my-16 2xl:w-[1321px] 2xl:mx-auto">
