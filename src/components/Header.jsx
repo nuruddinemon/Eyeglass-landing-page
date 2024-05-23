@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <div id="header" className="bg-white">
-      <Navbar className="px-12 py-8 border-0">
+      <Navbar className="px-12 py-8 border-0 max-w-full">
         <div className="flex items-center justify-between ">
           <Typography as="a" href="#">
             <img src={Logo} alt="logo" />
