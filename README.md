@@ -1,5 +1,5 @@
 # Eyglass single product landing page
 
-[Live Link](https://github.com/nuruddinemon/Eyeglass-landing-page) 
+[Live Link](https://vercel.com/nur-uddin-emons-projects/eyeglass-landing-page) 
 
 
