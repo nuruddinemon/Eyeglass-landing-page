@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Logo from "../assets/images/Logo.png";
 import shopIcon from "../assets/images/header shop icon.png";
 import profileIcon from "../assets/images/header Profile icon.png";
@@ -9,9 +9,11 @@ import {
   IconButton
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { CartContext } from "../context/CartContext";
 
 export default function Header() {
   const [openNav, setOpenNav] = useState(false);
+  const {  cartItems } = useContext(CartContext);
 
   useEffect(() => {
     window.addEventListener(
@@ -81,8 +83,9 @@ export default function Header() {
             </ul>
           </div>
           <div className="items-center gap-6 hidden lg:flex">
-            <button>
+            <button className="relative">
               <img src={shopIcon} alt="shopIcon" />
+              <p className="absolute left-4 bottom-4 size-6 bg-[#383838] text-white flex items-center justify-center rounded-full">{cartItems.length}</p>
             </button>
             <a href="/">
               <img src={profileIcon} alt="profileIcon" />
@@ -154,8 +157,9 @@ export default function Header() {
               </li>
             </ul>
             <div className="flex items-center gap-6">
-              <button>
+              <button className="relative">
                 <img src={shopIcon} alt="shopIcon" />
+                <p className="absolute left-4 bottom-4 size-6 bg-[#383838] text-white flex items-center justify-center rounded-full">{cartItems.length}</p>
               </button>
               <a href="/">
                 <img src={profileIcon} alt="profileIcon" />

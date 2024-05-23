@@ -1,12 +1,55 @@
+import ProductSlider from "./ProductSlider";
 import product1 from "../assets/images/product Image 1.png";
 import product2 from "../assets/images/product Image 2.png";
 import product3 from "../assets/images/product Image 3.png";
 import product4 from "../assets/images/product Image 4.png";
 import product5 from "../assets/images/product Image 5.png";
 import product6 from "../assets/images/product Image 6.png";
-import heartIcon from "../assets/images/heart_icon.png";
+import { CartContext } from "../context/CartContext";
+import { useContext } from "react";
+
+
+let products = [
+        {
+            "id": 1,
+            "title": "Bravo Sunglasses",
+            "price": 150,
+            "discountPrice": 100,
+        },
+        {
+            "id": 2,
+            "title": "Vincent Chase",
+            "price": 150,
+            "discountPrice": 120,
+        },
+        {
+            "id": 3,
+            "title": "John Jacobs",
+            "price": 150,
+            "discountPrice": 100,
+        },
+        {
+            "id": 4,
+            "title": "Tommy Hilfiger",
+            "price": 150,
+            "discountPrice": 130,
+        },
+        {
+            "id": 5,
+            "title": "Ray Bans",
+            "price": 150,
+            "discountPrice": 120,
+        },
+        {
+            "id": 6,
+            "title": "Occhiali",
+            "price": 150,
+            "discountPrice": 110,
+        },
+]
 
 export default function OurProducts() {
+  const {addToCart } = useContext(CartContext);
   return (
     <div id="our_products" className="2xl:w-[1321px] w-[90%] mx-auto my-28">
       <div className="flex flex-col items-center gap-8 lg:justify-between lg:flex-row lg:items-stretch lg:gap-0">
@@ -39,238 +82,27 @@ export default function OurProducts() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-12 mt-16 lg:gap-4 lg:justify-between lg:flex-row lg:items-stretch">
-        <div className="sm:w-[417px]">
-          <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between">
-            <div className="flex items-center justify-between">
-              <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center">
-                <p className="text-[#5a5a5a] text-base font-jost font-bold ">
-                  10%
+      {products.length > 0 && (
+          <div className="grid 2xl:grid-cols-3  items-center gap-12 mt-16 xl:gap-8 2xl:justify-between justify-center 2xl:flex-row 2xl:items-stretch">
+            {products.map((product) => (
+              <div className="xl:w-[417px] 2xl:text-start text-center w-[70%] mx-auto" key={product.id}>
+                <ProductSlider urlOne={product2} urlTwo={product3} urlThree={product4}  />
+                <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
+                  {product.title}
+                </h2>
+                <p className="flex gap-2 my-2 text-xl font-jost 2xl:justify-start justify-center">
+                  <span className="font-bold text-[#535353]">${product.discountPrice}</span>
+                  <span className="text-[#545454] line-through">${product.price}</span>
                 </p>
-              </div>
-              <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <button>
-                  <img src={heartIcon} alt="heart icon" />
+                <button onClick={() => addToCart(product) } className="text-[#5a5a5a] text-xl font-jost underline">
+                  Add To Cart
                 </button>
               </div>
-            </div>
-            <img src={product1} alt="product thumbnail" />
-            <ul className="flex justify-center gap-2">
-              <li>
-                <button className="bg-[#FED29C] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#FED29C] border-[1px] border-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-            </ul>
+            ))}
           </div>
-          <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
-            Bravo Sunglasses
-          </h2>
-          <p className="flex gap-2 my-2 text-xl font-jost">
-            <span className="font-bold text-[#535353]">$100</span>
-            <span className="text-[#545454] line-through">$150</span>
-          </p>
-          <button className="text-[#5a5a5a] text-xl font-jost underline">
-            Add To Cart
-          </button>
-        </div>
-        <div className="sm:w-[417px]">
-          <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between ">
-            <div className="flex items-center justify-between">
-              <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center">
-                <p className="text-[#5a5a5a] text-base font-jost font-bold ">
-                  10%
-                </p>
-              </div>
-              <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <button>
-                  <img src={heartIcon} alt="heart icon" />
-                </button>
-              </div>
-            </div>
-            <img src={product2} alt="product thumbnail" />
-            <ul className="flex justify-center gap-2">
-              <li>
-                <button className="bg-[#FED29C] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#FED29C] border-[1px] border-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-            </ul>
-          </div>
-          <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
-            Vincent Chase
-          </h2>
-          <p className="flex gap-2 my-2 text-xl font-jost">
-            <span className="font-bold text-[#535353]">$120</span>
-            <span className="text-[#545454] line-through">$150</span>
-          </p>
-          <button className="text-[#5a5a5a] text-xl font-jost">
-            Add To Cart
-          </button>
-        </div>
-        <div className="sm:w-[417px]">
-          <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between">
-            <div className="flex items-center justify-end">
-              <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full  justify-center items-center hidden">
-                <p className="text-[#5a5a5a] text-base font-jost font-bold ">
-                  10%
-                </p>
-              </div>
-              <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <button>
-                  <img src={heartIcon} alt="heart icon" />
-                </button>
-              </div>
-            </div>
-            <img src={product3} alt="product thumbnail" />
-            <ul className="flex justify-center gap-2">
-              <li>
-                <button className="bg-[#FED29C] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#FED29C] border-[1px] border-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-            </ul>
-          </div>
-          <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
-            John Jacobs
-          </h2>
-          <p className="flex gap-2 my-2 text-xl font-jost">
-            <span className="font-bold text-[#535353]">$100</span>
-            <span className="text-[#545454] hidden">$150</span>
-          </p>
-          <button className="text-[#5a5a5a] text-xl font-jost">
-            Add To Cart
-          </button>
-        </div>
-      </div>
-      <div className="flex flex-col items-center gap-12 mt-24 lg:gap-4 lg:justify-between lg:flex-row lg:items-stretch">
-        <div className="sm:w-[417px]">
-          <div className="bg-[#F7F7F7] rounded-md p-8 h-[474px] flex flex-col justify-between">
-            <div className="flex items-center justify-between">
-              <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center">
-                <p className="text-[#5a5a5a] text-base font-jost font-bold ">
-                  10%
-                </p>
-              </div>
-              <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <button>
-                  <img src={heartIcon} alt="heart icon" />
-                </button>
-              </div>
-            </div>
-            <img src={product4} alt="product thumbnail" />
-            <ul className="flex justify-center gap-2">
-              <li>
-                <button className="bg-[#FED29C] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#FED29C] border-[1px] border-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-            </ul>
-          </div>
-          <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
-            Tommy Hilfiger
-          </h2>
-          <p className="flex gap-2 my-2 text-xl font-jost">
-            <span className="font-bold text-[#535353]">$130</span>
-            <span className="text-[#545454] line-through">$150</span>
-          </p>
-          <button className="text-[#5a5a5a] text-xl font-jost underline">
-            Add To Cart
-          </button>
-        </div>
-        <div className="sm:w-[417px]">
-          <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between">
-            <div className="flex items-center justify-between">
-              <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full  justify-center items-center hidden">
-                <p className="text-[#5a5a5a] text-base font-jost font-bold ">
-                  10%
-                </p>
-              </div>
-              <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <button>
-                  <img src={heartIcon} alt="heart icon" />
-                </button>
-              </div>
-            </div>
-            <img src={product5} alt="product thumbnail" />
-            <ul className="flex justify-center gap-2">
-              <li>
-                <button className="bg-[#FED29C] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#FED29C] border-[1px] border-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-            </ul>
-          </div>
-          <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
-            Ray Ban
-          </h2>
-          <p className="flex gap-2 my-2 text-xl font-jost">
-            <span className="font-bold text-[#535353]">$120</span>
-            <span className="text-[#545454] line-through hidden">$150</span>
-          </p>
-          <button className="text-[#5a5a5a] text-xl font-jost underline">
-            Add To Cart
-          </button>
-        </div>
-        <div className="sm:w-[417px]">
-          <div className="bg-[#F7F7F7] rounded-md p-8  h-[474px] flex flex-col justify-between">
-            <div className="flex items-center justify-between">
-              <div className="w-[60px] h-[60px] bg-[#fed29c] rounded-full flex justify-center items-center">
-                <p className="text-[#5a5a5a] text-base font-jost font-bold ">
-                  10%
-                </p>
-              </div>
-              <div className="w-[60px] h-[60px] border-[1px] border-[#545454] rounded-full flex justify-center items-center">
-                <button>
-                  <img src={heartIcon} alt="heart icon" />
-                </button>
-              </div>
-            </div>
-            <img src={product6} alt="product thumbnail" />
-            <ul className="flex justify-center gap-2">
-              <li>
-                <button className="bg-[#FED29C] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-              <li>
-                <button className="bg-[#FED29C] border-[1px] border-[#383838] h-[14px] w-[14px] rounded-full"></button>
-              </li>
-            </ul>
-          </div>
-          <h2 className="text-[#383838] text-3xl font-jost leading-[40px] mt-4">
-            Occhiali
-          </h2>
-          <p className="flex gap-2 my-2 text-xl font-jost">
-            <span className="font-bold text-[#535353]">$110</span>
-            <span className="text-[#545454] line-through">$150</span>
-          </p>
-          <button className="text-[#5a5a5a] text-xl font-jost">
-            Add To Cart
-          </button>
-        </div>
-      </div>
+        )}
+
+     
     </div>
   );
 }
